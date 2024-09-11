@@ -19,10 +19,10 @@ function App() {
           <div className="flex flex-col md:flex-row gap-8">
             <Sidebar />
             <Routes>
-              <Route path="/home" element={<Home />} />
+              <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/projects" element={<Projects />} />
-              <Route path="/certificate" element={<Certificate />} />
+              <Route path="/certificates" element={<Certificate />} />
             </Routes>
           </div>
           <Footer />

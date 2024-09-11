@@ -4,7 +4,7 @@ import { skills } from "../lib/constants";
 
 function Skills() {
   return (
-    <motion.section initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.6 }} className="bg-gray-800 rounded-xl p-6 mb-8">
+    <motion.section initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.4 }} className="bg-gray-800 rounded-xl p-6 mb-8">
       <h2 className="text-2xl font-semibold mb-4">Skills</h2>
       <div className="flex flex-wrap gap-2 justify-center">
         {skills.map((skill) => (

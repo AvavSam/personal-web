@@ -1,9 +1,9 @@
 import React from "react";
-import { BackgroundLines } from "../components/ui/background-lines";
-import { FlipWords } from "../components/ui/flip-words";
+import { BackgroundLines } from "./ui/background-lines";
+import { FlipWords } from "./ui/flip-words";
 import { motion } from "framer-motion";
 function Header() {
-  const words = ["SoftwareEngineer", "UI/UX Designer"];
+  const words = ["Front-End Dev", "UI/UX Designer"];
 
   return (
     <header className="mt-4 md:mt-0 mb-8 flex justify-between items-center">
