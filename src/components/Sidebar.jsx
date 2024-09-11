@@ -15,8 +15,9 @@ function Sidebar() {
   return (
     <>
       {/* Hamburger Menu for mobile */}
-      <button onClick={() => setIsMenuOpen(true)} className="fixed top-4 left-4 z-50 md:hidden bg-gray-800 text-white border border-gray-700 hover:bg-gray-700 hover:text-white p-3 rounded-lg shadow-2xl">
+      <button onClick={() => setIsMenuOpen(true)} className="fixed flex gap-2 top-4 left-4 z-50 md:hidden bg-gray-800 text-white border border-gray-700 hover:bg-gray-700 hover:text-white p-2 rounded-lg shadow-2xl">
         <Menu className="h-6 w-6" />
+        <h2>Menu</h2>
       </button>
 
       {/* Mobile Menu Drawer */}

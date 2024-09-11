@@ -4,6 +4,7 @@ import Contact from "../components/Contact";
 import { motion } from "framer-motion";
 
 function Home() {
+  document.title = "Home | Avav Abdillah Sam";
   return (
     <main className="w-full md:w-3/4">
       <motion.section initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }} className="bg-gray-800 rounded-xl p-6 mb-8">
