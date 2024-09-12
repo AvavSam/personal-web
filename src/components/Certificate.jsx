@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import { certificatesdata } from "../lib/constants";
 
 function Certificates() {
@@ -9,7 +11,10 @@ function Certificates() {
       <h2 className="text-2xl font-semibold mb-4">Certificate</h2>
       <div className="space-y-6">
         {certificatesdata.map((cert, index) => (
-          <motion.div
+          <motion.a
+            href={cert.link}
+            target="_blank"
+            rel="noreferrer"
             key={index}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -17,24 +22,21 @@ function Certificates() {
             className={`${cert.color} rounded-xl p-4 flex flex-col md:flex-row items-start md:items-center gap-4`}
           >
             <div className="flex-grow">
-              <a href={cert.link} target="_blank" rel="noreferrer">
-                <h2 className="text-xl font-semibold mb-2">{cert.name}</h2>
-                <p className="text-sm text-gray-300 mb-1">{cert.organization}</p>
-                <p className="text-sm text-gray-400 mb-1">{cert.issuedDate}</p>
-                {cert.credentialId && <p className="text-sm text-gray-400 mb-1">Credential ID: {cert.credentialId}</p>}
-                <div className="flex flex-wrap gap-2 mt-2">
-                  {cert.skills.map((skill, index) => (
-                    <span key={index} className="border border-white border-opacity-40 text-sm px-2 py-1 rounded">
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </a>
+              <h2 className="text-xl font-semibold mb-2">{cert.name}</h2>
+              <p className="text-sm text-gray-300 mb-1">{cert.organization}</p>
+              <p className="text-sm text-gray-400 mb-1">{cert.issuedDate}</p>
+              {cert.credentialId && <p className="text-sm text-gray-400 mb-1">Credential ID: {cert.credentialId}</p>}
+              <div className="flex flex-wrap gap-2 mt-2">
+                {cert.skills.map((skill, index) => (
+                  <span key={index} className="border border-white border-opacity-40 text-sm px-2 py-1 rounded">
+                    {skill}
+                  </span>
+                ))}
+              </div>
             </div>
-            <a href={cert.link} target="_blank" rel="noreferrer">
-              <img src={cert.image} alt={`${cert.name} Certificate`} className="w-full md:w-40 h-auto object-cover rounded" />
-            </a>
-          </motion.div>
+
+            <LazyLoadImage src={cert.image} alt={`${cert.name} Certificate`} effect="blur" className="w-full md:w-40 h-auto object-cover rounded" wrapperClassName="w-full md:w-40" />
+          </motion.a>
         ))}
       </div>
       <motion.a

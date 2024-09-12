@@ -32,7 +32,7 @@ function Sidebar() {
 
               {/* Mobile Navigation Content */}
               <nav className="mt-12 h-full">
-                <img src="/profile-nobg.png" alt="Profile" className="w-32 h-32 rounded-full mx-auto mb-4" />
+                <img src="/profile-nobg.webp" alt="Profile" className="w-32 h-32 rounded-full mx-auto mb-4 border-2" />
                 <h2 className="text-xl font-semibold text-center mb-4">Avav Abdillah Sam</h2>
 
                 <ul className="space-y-2">
@@ -59,7 +59,7 @@ function Sidebar() {
       {/* Regular Sidebar for Desktop */}
       <nav className="hidden md:block md:w-1/4">
         <div className="bg-gray-800 rounded-xl p-4">
-          <img src="/profile-nobg.png" alt="Profile" className="w-32 h-32 rounded-full mx-auto mb-4" />
+          <img src="/profile-nobg.webp" alt="Profile" className="mt-3 w-32 h-32 rounded-full mx-auto mb-4 border-2" />
           <h2 className="text-xl font-semibold text-center mb-4">Avav Abdillah Sam</h2>
 
           <ul className="space-y-2">
