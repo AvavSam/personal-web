@@ -9,6 +9,9 @@ import { StarsBackground } from "./components/ui/stars-background";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import Footer from "./components/Footer";
+import Login from "./pages/Login";
+import ProtectedRoute from "./pages/ProtectedRoute";
+import UploadForm from "./pages/UploadForm";
 
 function App() {
   return (
@@ -23,6 +26,15 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/certificates" element={<Certificate />} />
+              <Route path="/login" element={<Login />} />
+              <Route
+                path="/admin"
+                element={
+                  <ProtectedRoute>
+                    <UploadForm />
+                  </ProtectedRoute>
+                }
+              />
             </Routes>
           </div>
           <Footer />
