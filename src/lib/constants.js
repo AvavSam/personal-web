@@ -1,4 +1,4 @@
-import { Github, Linkedin, Instagram, Mail, Code, FileCode, GitBranch, PenTool, Cpu, Home, User, StickyNote, Briefcase, Database } from "lucide-react";
+import { Github, Linkedin, Instagram, Mail, Code, FileCode, GitBranch, PenTool, Cpu, Home, User, StickyNote, Briefcase, Database, Atom, BrainCircuit, AppWindow} from "lucide-react";
 
 export const navItems = [
   { name: "Home", icon: Home, path: "" },
@@ -8,15 +8,15 @@ export const navItems = [
 ];
 
 export const skills = [
-  { name: "HTML", color: "bg-orange-600/50", icon: FileCode },
+  { name: "HTML", color: "bg-orange-600/50", icon: AppWindow},
   { name: "CSS", color: "bg-blue-600/50", icon: FileCode },
   { name: "JavaScript", color: "bg-yellow-500/50", icon: Code },
   { name: "TailwindCSS", color: "bg-blue-700/50", icon: FileCode },
-  { name: "React", color: "bg-blue-500/50", icon: Code },
+  { name: "React", color: "bg-blue-500/50", icon: Atom },
   { name: "C++", color: "bg-blue-800/50", icon: Cpu },
-  { name: "Git", color: "bg-red-500/50", icon: GitBranch },
-  { name: "Python", color: "bg-blue-500/50", icon: Code },
+  { name: "Python", color: "bg-blue-500/50", icon: BrainCircuit },
   { name: "MySQL", color: "bg-orange-500/50", icon: Database },
+  { name: "Git", color: "bg-red-500/50", icon: GitBranch },
   { name: "Figma", color: "bg-purple-500/50", icon: PenTool },
 ];
 
@@ -34,6 +34,7 @@ export const educationData = [
     field: "Faculty of Engineering | Informatics Engineering (S.Kom)",
     period: "Sep 2023 - Present",
     logo: "/Untad.webp",
+    color: "bg-red-900/40",
   },
   {
     institution: "Programming Tadulako",
@@ -41,6 +42,7 @@ export const educationData = [
     field: "",
     period: "Dec 2023 - May 2024",
     logo: "/ProgrammingTadulako.webp",
+    color: "bg-blue-900/30",
   },
   {
     institution: "Al-Azhar Mandiri Senior High School",
@@ -48,6 +50,7 @@ export const educationData = [
     field: "",
     period: "2021 - 2023",
     logo: "/AlAzhar.webp",
+    color: "bg-red-900/30",
   },
 ];
 
@@ -57,12 +60,14 @@ export const organizationData = [
     role: "Member",
     period: "Nov 2023 - Present",
     logo: "/HMTI.webp",
+    color: "bg-blue-900/30",
   },
   {
     name: "Programming Tadulako",
     role: "Member",
     period: "May 2024 - Present",
     logo: "/ProgrammingTadulako.webp",
+    color: "bg-blue-900/30",
   },
 ];
 

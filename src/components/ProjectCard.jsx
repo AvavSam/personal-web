@@ -18,14 +18,18 @@ function ProjectCard({ project }) {
         ))}
       </div>
       <div className="flex justify-between">
-        <a href={project.github} className="text-blue-400 hover:text-blue-300 flex items-center transition-colors">
-          <Github size={18} className="mr-1" />
-          GitHub
-        </a>
-        <a href={project.live} className="text-green-400 hover:text-green-300 flex items-center transition-colors">
-          <ExternalLink size={18} className="mr-1" />
-          Live Demo
-        </a>
+        {project.github && (
+          <a href={project.github} className="text-blue-400 hover:text-blue-300 flex items-center transition-colors">
+            <Github size={18} className="mr-1" />
+            GitHub
+          </a>
+        )}
+        {project.live && (
+          <a href={project.live} className="text-green-400 hover:text-green-300 flex items-center transition-colors">
+            <ExternalLink size={18} className="mr-1" />
+            Live Demo
+          </a>
+        )}
       </div>
     </motion.div>
   );
