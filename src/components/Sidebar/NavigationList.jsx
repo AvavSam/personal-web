@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { navItems } from "../lib/constants";
+import { navItems } from "../../lib/constants";
 
 function NavigationList({ onItemClick = () => {} }) {
   const location = useLocation();

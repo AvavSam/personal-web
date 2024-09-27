@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ExternalLink } from "lucide-react";
+import ButtonLink from "../components/ButtonLink";
 // import { projects } from "../lib/projectsData";
 // import ProjectCard from "../components/ProjectCard";
 import WIP from "../components/WIP";
@@ -22,20 +22,7 @@ export default function ProjectsPage() {
           </div>
         ))}
       </div> */}
-      <motion.a
-        href="https://www.github.com/AvavSam"
-        target="_blank"
-        rel="noopener noreferrer"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.4 }}
-        className="mt-4 block text-center py-2 px-4 rounded-lg bg-gray-800 hover:bg-gray-700 transition-colors border border-white"
-      >
-        <span className="flex items-center justify-center">
-          Checkout more on my Github
-          <ExternalLink size={18} className="ml-2" />
-        </span>
-      </motion.a>
+      <ButtonLink link="https://github.com/AvavSam?tab=repositories" name="Github" />
     </main>
   );
 }

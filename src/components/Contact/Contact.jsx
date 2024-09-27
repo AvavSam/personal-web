@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { contactLinks } from "../lib/constants";
+import { contactLinks } from "../../lib/constants";
 import ContactLink from "./ContactLink";
 
 function Contact() {

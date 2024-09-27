@@ -1,6 +1,6 @@
 import React from "react";
-import Education from "../components/Education";
-import Organization from "../components/Organization";
+import Education from "../components/Education/Education";
+import Organization from "../components/Organization/Organization";
 
 function About() {
   document.title = "About | Avav Abdillah Sam";

@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { certificatesdata } from "../lib/constants";
+import { certificatesdata } from "../../lib/constants";
 import CertificateCard from "./CertificateCard";
-import LinkedInLink from "./LinkedInLink";
+import ButtonLink from "../ButtonLink";
 
 const Certificates = () => (
   <motion.section initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.2 }} className="bg-gray-800 rounded-xl p-6 mb-8">
@@ -12,7 +12,7 @@ const Certificates = () => (
         <CertificateCard key={index} cert={cert} index={index} />
       ))}
     </div>
-    <LinkedInLink />
+    <ButtonLink link="https://www.linkedin.com/in/avavsam/details/certifications/" name="Linkedin" />
   </motion.section>
 );
 

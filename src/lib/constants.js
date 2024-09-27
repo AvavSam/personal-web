@@ -1,4 +1,4 @@
-import { Github, Linkedin, Instagram, Mail, Code, FileCode, GitBranch, PenTool, Cpu, Home, User, StickyNote, Briefcase } from "lucide-react";
+import { Github, Linkedin, Instagram, Mail, Code, FileCode, GitBranch, PenTool, Cpu, Home, User, StickyNote, Briefcase, Database } from "lucide-react";
 
 export const navItems = [
   { name: "Home", icon: Home, path: "" },
@@ -10,12 +10,13 @@ export const navItems = [
 export const skills = [
   { name: "HTML", color: "bg-orange-600/50", icon: FileCode },
   { name: "CSS", color: "bg-blue-600/50", icon: FileCode },
-  { name: "TailwindCSS", color: "bg-blue-700/50", icon: FileCode },
   { name: "JavaScript", color: "bg-yellow-500/50", icon: Code },
+  { name: "TailwindCSS", color: "bg-blue-700/50", icon: FileCode },
   { name: "React", color: "bg-blue-500/50", icon: Code },
   { name: "C++", color: "bg-blue-800/50", icon: Cpu },
   { name: "Git", color: "bg-red-500/50", icon: GitBranch },
   { name: "Python", color: "bg-blue-500/50", icon: Code },
+  { name: "MySQL", color: "bg-orange-500/50", icon: Database },
   { name: "Figma", color: "bg-purple-500/50", icon: PenTool },
 ];
 
@@ -88,22 +89,22 @@ export const certificatesdata = [
   {
     name: "Belajar Dasar Pemrograman Web",
     organization: "Dicoding Indonesia",
-    issuedDate: "Issued Jun 2024 - Expires Jun 2027",
-    credentialId: "2VX3R04LQZYQ",
+    issuedDate: "Issued Sep 2024 - Expires Sep 2027",
+    credentialId: "EYX4V35VWZDL",
     skills: ["HTML", "CSS"],
     image: "/certificate/Dicoding Belajar Dasar Pemrograman Web.webp",
     color: "bg-blue-900/30",
-    link: "https://www.dicoding.com/certificates/2VX3R04LQZYQ",
+    link: "https://www.dicoding.com/certificates/EYX4V35VWZDL",
   },
   {
     name: "Belajar Membuat Front-End Web untuk Pemula",
     organization: "Dicoding Indonesia",
-    issuedDate: "Issued Jun 2024 - Expires Jun 2027",
-    credentialId: "MEPJNO956X3V",
+    issuedDate: "Issued Sep 2024 - Expires Sep 2027",
+    credentialId: "GRX5O7QW2P0M",
     skills: ["HTML", "JavaScript"],
     image: "/certificate/Dicoding Belajar Membuat Front-End Web.webp",
     color: "bg-blue-900/30",
-    link: "https://www.dicoding.com/certificates/MEPJNO956X3V",
+    link: "https://www.dicoding.com/certificates/GRX5O7QW2P0M",
   },
   {
     name: "Intro to Software engineering",

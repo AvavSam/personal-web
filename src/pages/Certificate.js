@@ -1,5 +1,5 @@
 import React from "react";
-import Certificate from "../components/Certificate";
+import Certificate from "../components/Certificates/Certificate";
 
 const Certificates = () => {
   document.title = "Certificate | Avav Abdillah Sam";

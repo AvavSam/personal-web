@@ -7,7 +7,7 @@ import Certificate from "./pages/Certificate";
 import { ShootingStars } from "./components/ui/shooting-stars";
 import { StarsBackground } from "./components/ui/stars-background";
 import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
+import Sidebar from "./components/Sidebar/Sidebar";
 import Footer from "./components/Footer";
 
 function App() {
