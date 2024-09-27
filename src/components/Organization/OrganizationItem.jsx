@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function OrganizationItem({ org, index }) {
   return (
-    <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: index * 0.1 }} className="bg-blue-900/30 p-4 rounded-xl flex items-center">
+    <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: index * 0.1 }} className={`${org.color} p-4 rounded-xl flex items-center`}>
       <img src={org.logo} alt={org.name} className="w-16 h-16 mr-4" />
       <div>
         <h3 className="font-semibold">{org.name}</h3>
